@@ -8,7 +8,16 @@
     <title>Avaliação NodeJS</title>
 </head>
 <body>
-    <h1 class="teste">Hello Word</h1>
+    <form action="/create" method="post">
+        <input type="text" name="task" id="task" placeholder="Insira uma tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <% tasksList.forEach((task) => { %>
+    <ul>
+        <li><% task.task %> | <% task.date %></li>
+    </ul>
+    <% }) %>
 
     <script src="script.js"></script>
 </body>
