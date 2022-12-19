@@ -29,7 +29,7 @@ input{
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 70%;
+    width: 500px;
     padding: .5rem;
     font-size: 1rem;
     outline: none;
@@ -39,7 +39,7 @@ input{
 
 button{
     padding: 0.6rem;
-    width: 25%;
+    width: 130px;
     background-color: #202024;
     color: rgb(109, 109, 109);
     text-align: center;
@@ -54,6 +54,7 @@ button{
 button:hover{
     background-color: #004e14;
     color: #fff;
+    align-items: flex-end;
 }
 
 section#tasks{
@@ -66,10 +67,9 @@ ul{
 
 ul li{
     position: relative;
-    padding: 2rem;
+    padding: 4rem;
     background-color: rgb(22, 22, 24);
     text-decoration: none;
-    display: flex ;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -79,6 +79,12 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
+    
+}
+ul li p{
+    text-decoration: none;
+    color: rgb(0, 170, 255);
+    display: flex;
     
 }
 
@@ -109,6 +115,7 @@ a.btnUpdate{
     text-decoration: none;
     color: #ccc;
     transition: all .3s ease-in-out
+    
 }
 
 a.btnUpdate:hover{

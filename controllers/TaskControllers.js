@@ -11,9 +11,10 @@ const getAllTasks = async (req, res) => {
 }
 
 const createTask = async (req, res) => {
+
     const task = req.body;
 
-    if (!task.task) {
+    if (!task.task && !task.description) {
         return res.redirect("/")
     }
 
@@ -43,7 +44,8 @@ const getById = async (req,res) => {
 const updateOneTask = async (req,res) =>{
     try {
         const task = req.body;
-        await Task.updateOne({ _id: req.params.id}, task);
+        const description = req.body
+        await Task.updateOne({ _id: req.params.id}, task,description);
         res.redirect("/");
     } catch (err) {
         res.status(500).send({ error: err.message })
