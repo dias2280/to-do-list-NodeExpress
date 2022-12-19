@@ -9,6 +9,7 @@ Projeto em NodeJS
 * EJS <br>
 * Nodemon <br>
 * Mongoose <br>
+* Express <br>
 
 ## 📦 Implantação
 
