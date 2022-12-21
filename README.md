@@ -1,12 +1,3 @@
-# Atividade Realizada no curso Connect-Biopark
-# Participantes :
-* Gabriel Fernandes Godoy Dias
-* Mateus delai takayama
-* Ana cassia ribeiro
-* Guilherme cassimiro
-* Daniella bessegatto
-* Heron G S
-
 # Projeto To-Do-List 
 
 Projeto em NodeJS
@@ -36,3 +27,5 @@ npm run dev
 ```
 
 ## Projeto utilizando banco de dados mongoDB
+
+
